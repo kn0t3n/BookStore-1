@@ -7,26 +7,28 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
-<head>
-    <title>Bücherliste</title>
-</head>
-<body>
+<%@include file="../common/header.jspf"%>
+<%@include file="../common/navigation.jspf"%>
 <h1>Bücherliste</h1>
 Ihre Bücher sind:
-<table>
+
+<div class="container">
+<table class="table table-striped">
     <c:forEach var="book" items="${books}">
         <tr>
             <td>${book.id}</td>
             <td>${book.isbn}</td>
             <td>${book.titel}</td>
             <td>${book.autor}</td>
-            <td><a href="deleteBooks.do?id=${book.id}">Löschen</a></td>
+            <td><a href="deleteBooks.do?id=${book.id}" class="btn btn-danger">Löschen</a></td>
         </tr>
     </c:forEach>
 </table>
 
-<a href="addBooks.do">Neu</a>
+<a href="addBooks.do" class="btn btn-success">Neu</a>
+</div>
+<script src="webjars/jquery/3.3.1/jquery.min.js" ></script>
+<script src="webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
 
 </body>
 </html>

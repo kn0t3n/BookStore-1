@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class LoginServlet extends HttpServlet{
+public class LoginServlet extends HttpServlet {
 
     private LoginService loginService = new LoginService();
 

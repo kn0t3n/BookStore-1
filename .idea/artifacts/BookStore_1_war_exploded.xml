@@ -1,18 +1,20 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="BookStore:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/BookStore_war_exploded</output-path>
+  <artifact type="exploded-war" name="BookStore-1:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/BookStore_1_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="BookStore/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="BookStore" />
+          <element id="module-output" name="BookStore-1" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="org.eclipse.persistence:eclipselink:2.5.0" />
           <element id="library" level="project" name="mysql:mysql-connector-java:5.1.45" />
           <element id="library" level="project" name="jstl:jstl:1.2" />
+          <element id="library" level="project" name="org.webjars:bootstrap:3.3.7-1" />
+          <element id="library" level="project" name="org.webjars:jquery:3.3.1" />
         </element>
       </element>
+      <element id="javaee-facet-resources" facet="BookStore-1/web/Web" />
     </root>
   </artifact>
 </component>
